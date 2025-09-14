@@ -57,7 +57,20 @@
   100% { background-position: 200% 50%; }
 }
 .gp-animate-shimmer { animation: gp-shimmer 3s linear infinite; }
+.ball {
+    position: relative;
+  bottom: 0;
+  animation: bounce 1s infinite;
+}
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
         </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -73,9 +86,9 @@
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-[0.5px]">
 
     <!-- Logo -->
-    <a href="https://www.facebook.com/gldysvg" class="flex items-center space-x-2 rtl:space-x-reverse" target="_blank">
+    <a href="https://www.facebook.com/gldysvg" class=" flex items-center space-x-2 rtl:space-x-reverse" target="_blank">
      
-      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">GladPremiums</span>
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">welcome!・❥・</span>
     </a>
 
     <!-- Links -->
@@ -132,25 +145,25 @@
     <!-- Products Section (cards as price list) -->
     <div class="flex justify-center items-center ">
         <img src="images/gladyslogo.png" 
-             class="w-[50vmin] mt-[-20px]" 
+             class="w-[50vmin] " 
              loading="lazy" 
              onerror="this.onerror=null;this.src='images/gladyslogo.png'">
       </div>
       <div id="headline"
-      style="font-family:'Lilita One', cursive;"
+      style="font-family:'Clicker Script';"
       class="text-center mt-[-60px] font-bold leading-tight text-6xl text-transparent bg-clip-text
              bg-[linear-gradient(90deg,#a78bfa,#60a5fa,#34d399,#f472b6,#a78bfa)]
              bg-[length:200%_100%]">
-   Go premium, pay less.
+   less cost, greater access ˚ ༘♡ ⋆｡˚
  </div>
  
 
-    <section id="products" class="py-16">
+    <section id="products" class="py-16 ">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
+            <div class="text-center mb-12 mt-[-50px]">
                 
                 <!-- <h2 class="text-5xl md:text-6xl text-gray-900 mb-2" style="font-family:'Great Vibes',cursive;">price list</h2> -->
-                <p class="uppercase tracking-[0.5em] text-gray-600 text-xs md:text-sm">MOP : GCASH ONLY • FULL WARRANTY</p>
+                <p class="uppercase tracking-[0.5em] text-gray-600 text-xs md:text-sm">MOP : GCASH ONLY </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="productsGrid">
@@ -159,7 +172,7 @@
                 <div class="product-card" style="--accent:black">
                     <div class="card-header">
                         <center>
-                       <img src="images/netflix.jpg" class="w-[95px] h-[50px]">
+                       <img src="images/netflix.jpg" class="w-[95px] h-[50px] ball">
                        </center>
                     </div>
                     <div class="p-6">
@@ -167,6 +180,7 @@
                         <p class="text-gray-600 mb-4">Unlimited entertainment, ad-free and in Ultra HD.</p>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-md price">₱95 (1 device) / ₱165 (2 devices)</span>
+                            
                             <span class="text-sm text-gray-500">One Month Subscription</span>
                         </div>
                         <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">
@@ -179,7 +193,7 @@
                     <div class="card-header">
                         <center>
                         <img src="https://www.pngall.com/wp-content/uploads/13/Disney-Plus-Logo-PNG.png
-                        " class="w-[100px] h-[50px]">
+                        " class="w-[100px] h-[50px] ball">
                         </center>
                      
                     </div>
@@ -226,7 +240,7 @@
                     <div class="card-header">
                         <center>
                             <img src="images/capcut.png
-                            " class="w-[100px] h-[80px]">
+                            " class="w-[100px] h-[80px] ball">
                             </center>
                     </div>
                     <div class="p-6">
@@ -243,7 +257,7 @@
                 <div class="product-card" style="--accent:#000000">
                     <div class="card-header">
                         <center>
-                        <img src="images/scribd.png" class="h-[115px] w-[112px]">
+                        <img src="images/scribd.png" class="h-[115px] w-[112px] ball">
                         </center>
                     </div>
                     <div class="p-6">
@@ -260,7 +274,7 @@
                 <div class="product-card" style="--accent:#7f6a7e">
                     <div class="card-header">
                         <center>
-                        <img src="images/chatgpt.png" class="h-[115px] w-[112px]">
+                        <img src="images/chatgpt.png" class="h-[115px] w-[112px] ball">
                     </center>
                     </div>
                     <div class="p-6">
@@ -277,7 +291,7 @@
                 <div class="product-card" style="--accent:#4f16cf">
                     <div class="card-header">
                         <center>
-                            <img src="images/canva.png" class="h-[115px] w-[203px]">
+                            <img src="images/canva.png" class="h-[115px] w-[203px] ball">
                         </center>
                     </div>
                     <div class="p-6">
@@ -294,7 +308,7 @@
                 <div class="product-card" style="--accent:#10b981">
                     <div class="card-header">
                         <center>
-                        <img src="images/quillbot.png" class="h-[115px] w-[128px]">
+                        <img src="images/quillbot.png" class="h-[115px] w-[128px] ball">
                     </center>
                     </div>
                     <div class="p-6">
@@ -311,7 +325,7 @@
                 <div class="product-card" style="--accent:#1d3b31">
                     <div class="card-header">
                         <center>
-                        <img src="images/grammarly.png" class="h-[115px] w-[128px]">
+                        <img src="images/grammarly.png" class="h-[115px] w-[128px] ball">
                     </center>
                     </div>
                     <div class="p-6">
@@ -319,6 +333,24 @@
                         <p class="text-gray-600 mb-4">Clear, correct, and compelling writing made simple.</p>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-md price">₱45 (1 device)</span>
+                            <span class="text-sm text-gray-500">One Month Subscription</span>
+                        </div>
+                        <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">Available</div>
+                    </div>
+                </div>
+
+
+                   <div class="product-card" style="--accent:coral">
+                    <div class="card-header">
+                        <center>
+                        <img src="https://img.icons8.com/?size=100&id=6kZdxe7t8OL1&format=png&color=000000" class="h-[115px] w-[128px] ball">
+                    </center>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">MICROSOFT OFFICE</h3>
+                        <p class="text-gray-600 mb-4">Full access to premium apps, cloud storage, AI features, security, and multi-device use.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-md price">₱25 (via invite 2-3 devices)</span>
                             <span class="text-sm text-gray-500">One Month Subscription</span>
                         </div>
                         <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">Available</div>
@@ -348,80 +380,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                                 <div>
-                     <div class="flex items-center mb-4">
-                         <!-- Logo SVG for Footer -->
-                         <svg class="w-8 h-8 mr-3" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                             <!-- Background Circle -->
-                             <circle cx="16" cy="16" r="15" fill="url(#gradient-footer)" stroke="#6366f1" stroke-width="2"/>
-                             
-                             <!-- Play Button Icon -->
-                             <path d="M12 10L22 16L12 22V10Z" fill="white"/>
-                             
-                             <!-- Premium Crown -->
-                             <path d="M16 6L18 10L22 11L20 14L21 18L16 16L11 18L12 14L10 11L14 10L16 6Z" fill="#f59e0b"/>
-                             
-                             <!-- Streaming Waves -->
-                             <path d="M8 24C8 24 10 22 12 24C14 26 16 24 18 26C20 28 22 26 24 28" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                             
-                             <!-- Gradients -->
-                             <defs>
-                                 <linearGradient id="gradient-footer" x1="0%" y1="0%" x2="100%" y2="100%">
-                                     <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
-                                     <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
-                                 </linearGradient>
-                             </defs>
-                         </svg>
-                         
-                         <div class="flex flex-col">
-                             <h3 class="text-2xl font-bold text-primary leading-none">GladPremiums</h3>
-                             <span class="text-xs text-gray-400 font-medium">Premium Streaming</span>
-                         </div>
-                     </div>
-                     <p class="text-gray-400">Your trusted source for premium streaming accounts.</p>
-                 </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#products" class="hover:text-white">Products</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Support</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white">Help Center</a></li>
-                        <li><a href="#" class="hover:text-white">Contact Us</a></li>
-                        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
-                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i class="fab fa-facebook text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i class="fab fa-twitter text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i class="fab fa-instagram text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i class="fab fa-discord text-xl"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 GladPremiums. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+   
 
     <script>
         // Animation and mobile-friendly functionality
