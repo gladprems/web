@@ -64,81 +64,48 @@
 <body class="bg-gray-50">
     <!-- Navigation -->
     <!-- Add this inside: <div class="flex justify-between items-center h-16"> -->
-        <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-slate-200/60">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div class="flex justify-between items-center h-16">
+      
+
           
-                <!-- Left: brand (optional) -->
-                <div class="flex items-center gap-2">
-                  <!-- <span class="text-2xl font-black tracking-tight bg-clip-text text-transparent
-                               bg-[linear-gradient(90deg,#6366f1,#8b5cf6,#f59e0b)]">
-                    GladPremiums
-                  </span>
-                  <span class="hidden sm:inline text-xs uppercase tracking-widest text-slate-500">
-                    Premium Streaming
-                  </span> -->
-                </div>
-          
-                <!-- Right: Artistic Social Bar -->
-                <div class="relative">
-                  <!-- Gradient frame -->
-                  <div class="p-[2px] rounded-full bg-[conic-gradient(at_30%_120%,#6366f1_0deg,#8b5cf6_120deg,#f59e0b_240deg,#6366f1_360deg)]">
-                    <!-- Glass body -->
-                    <div class="flex items-center gap-1 rounded-full bg-white/80 backdrop-blur-xl
-                                px-2 py-1 shadow-[0_8px_30px_rgb(0,0,0,0.06)] ring-1 ring-white/60">
-          
-                      <!-- Item -->
-                      <a href="https://www.facebook.com/profile.php?id=61579335245248" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"
-                         class="group relative grid place-items-center size-10 rounded-full
-                                text-slate-600 hover:text-white
-                                ring-1 ring-slate-300/70 hover:ring-transparent
-                                transition ease-out duration-300
-                                hover:scale-110 hover:rotate-3
-                                bg-white/60 hover:bg-[#1877F2]">
-                        <i class="fab fa-facebook-f text-[18px]"></i>
-                        <span class="pointer-events-none absolute -bottom-7 translate-y-1 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition
-                                     text-[10px] px-2 py-0.5 rounded-full bg-slate-900 text-white">
-                          Facebook
-                        </span>
-                      </a>
-          
-                      <a href="https://www.facebook.com/profile.php?id=61579335245248" target="_blank" rel="noopener" aria-label="Messenger" title="Messenger"
-                         class="group relative grid place-items-center size-10 rounded-full
-                                text-slate-600 hover:text-white
-                                ring-1 ring-slate-300/70 hover:ring-transparent
-                                transition ease-out duration-300
-                                hover:scale-110 hover:rotate-3
-                                bg-white/60 hover:bg-[#0084FF]">
-                        <i class="fab fa-facebook-messenger text-[18px]"></i>
-                        <span class="pointer-events-none absolute -bottom-7 translate-y-1 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition
-                                     text-[10px] px-2 py-0.5 rounded-full bg-slate-900 text-white">
-                          Messenger
-                        </span>
-                      </a>
-          
-                      <a href="#" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"
-                         class="group relative grid place-items-center size-10 rounded-full
-                                text-slate-600 hover:text-white
-                                ring-1 ring-slate-300/70 hover:ring-transparent
-                                transition ease-out duration-300
-                                hover:scale-110 hover:rotate-3
-                                bg-white/60 hover:bg-gradient-to-br from-pink-500 to-amber-400">
-                        <i class="fab fa-instagram text-[18px]"></i>
-                        <span class="pointer-events-none absolute -bottom-7 translate-y-1 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition
-                                     text-[10px] px-2 py-0.5 rounded-full bg-slate-900 text-white">
-                          Instagram
-                        </span>
-                      </a>
-          
-          
-          
-                    </div>
-                  </div>
-                </div>
-          
-              </div>
-            </div>
-          </nav>
+
+<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 shadow-md">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+
+    <!-- Logo -->
+    <a href="https://www.facebook.com/gldysvg" class="flex items-center space-x-2 rtl:space-x-reverse" target="_blank">
+     
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">GladPremiums</span>
+    </a>
+
+    <!-- Links -->
+    <div class="flex md:order-2 space-x-4 md:space-x-6 rtl:space-x-reverse">
+      <a href="https://www.facebook.com/gldysvg" class="p-1 text-gray-700 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300 hover:scale-110 transform" target="_blank">
+        <img src="https://img.icons8.com/?size=100&id=z657ovoGgS2o&format=png&color=000000" class="w-12 h-12">
+        
+        </a>
+      <a href="#" class="p-1 text-gray-700 dark:text-gray-300 hover:text-pink-500 transition-colors duration-300 hover:scale-110 transform"> <img src="https://img.icons8.com/?size=100&id=BrU2BBoRXiWq&format=png&color=000000" class="w-12 h-12"></a>
+      <a href="https://www.facebook.com/gldysvg" target="_blank" class="p-1 text-gray-700 dark:text-gray-300 hover:text-green-500 transition-colors duration-300 hover:scale-110 transform"><img src="https://img.icons8.com/?size=100&id=zKtqfACOebXo&format=png&color=000000" class="w-12 h-12"></a>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Custom Animations -->
+<style>
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  nav {
+    animation: fadeInDown 0.8s ease-out;
+  }
+
+  .animate-spin-slow {
+    animation: spin 6s linear infinite;
+  }
+</style>
+
           
 
 
